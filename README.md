@@ -157,6 +157,100 @@ Repeated until centroids stabilize.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+# Environmental Cost Assessment
+
+As this project investigates environmental change within Arctic systems, it is important to also consider the environmental impact associated with the research methodology itself. Although remote sensing and machine learning approaches are generally less resource-intensive than large-scale field campaigns, they still carry computational and infrastructure-related environmental costs.
+
+## Computational Energy Use
+
+The machine learning workflow implemented in this project uses K-means clustering, an unsupervised algorithm that is computationally lightweight compared with modern deep learning approaches such as convolutional neural networks (CNNs) or transformer architectures.
+
+K-means clustering involves repeated calculations of distances between observations and cluster centroids. Computational cost scales approximately according to:
+
+$$
+O(nkt)
+$$
+
+where:
+
+- *n* = number of observations (pixels)
+- *k* = number of clusters
+- *t* = number of iterations until convergence
+
+For Sentinel-2 imagery, computational demands arise primarily from:
+
+- reading large multispectral datasets
+- preprocessing and resampling image bands
+- feature extraction (e.g., NDWI calculation)
+- repeated clustering iterations
+- visualisation and export of classification products
+
+However, because K-means requires no training phase involving millions of parameters, processing costs remain relatively modest.
+
+Compared with deep-learning approaches, K-means generally requires:
+
+- lower memory usage
+- shorter compute times
+- reduced GPU requirements
+- lower electricity consumption
+
+Consequently, the environmental footprint of this workflow is expected to be substantially lower than many contemporary ML pipelines.
+
+## Remote Sensing versus Field Campaigns
+
+Traditional melt pond observations often involve aircraft campaigns, ship-based expeditions, or on-site field measurements in remote Arctic regions.
+
+Such campaigns may require:
+
+- aircraft operations
+- research vessel deployment
+- fuel-intensive logistics
+- transportation of personnel and equipment
+
+Arctic field campaigns can therefore produce considerable greenhouse gas emissions.
+
+By contrast, this project utilises freely available SENTINEL-2 imagery collected through existing Earth observation infrastructure. Since the satellites are already operational and continuously collecting data, using archived imagery introduces little additional environmental cost beyond data storage and processing.
+
+This allows large geographic areas to be analysed without direct environmental disturbance to fragile polar environments.
+
+## Data Storage and Cloud Infrastructure
+
+While remote sensing avoids many direct environmental impacts, hidden infrastructure costs remain.
+
+Satellite imagery requires:
+
+- long-term archival storage
+- cloud server infrastructure
+- internet data transfer
+- processing centres and computational hardware
+
+Large Earth observation repositories collectively consume substantial electrical energy.
+
+Repeated downloading and duplication of large datasets can further increase storage demands. Efficient workflows can reduce these impacts through:
+
+- limiting unnecessary downloads
+- using cropped subsets where possible
+- avoiding repeated processing
+- storing intermediate products selectively
+
+## Overall Assessment
+
+The environmental cost of this project is considered relatively low.
+
+Key reasons include:
+
+- use of computationally efficient K-means clustering
+- reliance on existing satellite observations
+- avoidance of carbon-intensive field campaigns
+- minimal training requirements compared with deep learning
+
+Nevertheless, computational research is not environmentally neutral. Responsible machine learning practice should include consideration of computational efficiency, storage requirements, and energy consumption.
+
+As Earth observation datasets and machine learning models continue to increase in scale, evaluating environmental impacts should become a routine component of geospatial and climate research workflows.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 # Getting Started
 
 This project was developed using Google Colab.
