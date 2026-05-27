@@ -46,7 +46,7 @@ Using k-means machine learning classification to analyse SENTINEL-2 satellite da
 
 This project was created as a final assignment for GEOL0069 at University College London to explore the use of machine learning (ML) algorithms within Earth Science applications. It utilises unsupervised learning methods to detect and extract melt ponds from satellite imagery. SENTINEL-2 imagery was selected due to its high spatial resolution and multi-spectral capabilities, which are suitable for distinguishing meltwater from snow and ice surfaces. The primary algorithm implemented throughout this project is K-means clustering.
 
-[![Watch the video]([https://i.sstatic.net/Vp2cE.png](https://img.youtube.com/vi/9DESZnBYxqM/maxresdefault.jpg))](https://youtu.be/9DESZnBYxqM)
+[![YouTube](http://i.ytimg.com/vi/9DESZnBYxqM/hqdefault.jpg)](https://youtu.be/9DESZnBYxqM)
 
 ## Background
 
