@@ -46,6 +46,8 @@ Using k-means machine learning classification to analyse SENTINEL-2 satellite da
 
 This project was created as a final assignment for GEOL0069 at University College London to explore the use of machine learning (ML) algorithms within Earth Science applications. It utilises unsupervised learning methods to detect and extract melt ponds from satellite imagery. SENTINEL-2 imagery was selected due to its high spatial resolution and multi-spectral capabilities, which are suitable for distinguishing meltwater from snow and ice surfaces. The primary algorithm implemented throughout this project is K-means clustering.
 
+[![Watch the video]([https://i.sstatic.net/Vp2cE.png](https://img.youtube.com/vi/9DESZnBYxqM/maxresdefault.jpg))](https://youtu.be/9DESZnBYxqM)
+
 ## Background
 
 Melt ponds are pools of liquid water that form on the surface of sea ice and glaciers during seasonal melting. They significantly alter the surface albedo of ice-covered regions and can accelerate melting processes by absorbing greater amounts of incoming solar radiation.
@@ -257,7 +259,7 @@ This project was developed using Google Colab.
 
 To get started:
 
-1. Download `ML_Melt_Pond_Detection.ipynb`
+1. Download `Detection_of_Arctic_Melt_Ponds_ML.ipynb`
 2. Download the required datasets
 3. Modify file paths within the notebook
 4. Run notebook cells sequentially
@@ -272,9 +274,6 @@ The datasets used in this project are SENTINEL-2 Level-2B products.
 Study areas focus on Arctic and Greenland regions where seasonal melt pond formation is prevalent.
 
 Potential study sites include:
-
-- Greenland Ice Sheet
-- Canadian Arctic Archipelago
 - Beaufort Sea
 - Fram Strait sea ice
 
@@ -293,14 +292,8 @@ Data can be downloaded from the Copernicus Dataspace Browser:
 
 https://browser.dataspace.copernicus.eu/
 
-Search for SENTINEL-2 Level-2A scenes over Arctic regions during summer melt seasons (June–August).
-
-Recommended filters:
-
-- Product type: L2A
-- Cloud cover: <10%
-- Season: peak summer melt
-- Region: Greenland / Arctic sea ice
+Beaufort Sea: S2B_MSIL1C_20250701T210029_N0511_R100_T09XWB_20250701T223010.SAFE
+Fram Strait: S2B_MSIL1C_20250718T140739_N0511_R053_T28XEN_20250718T160725.SAFE
 
 Download and extract `.SAFE` products before use.
 
@@ -341,7 +334,7 @@ xincl2634@gmail.com
 
 Project Link:
 
-https://github.com/yourusername/GEOL0069-ML-Melt-Pond-Detection](https://github.com/xin-cl/Arctic_Melt_Pond_Detection_ML_GEOL0069
+[https://github.com/xin-cl/Arctic_Melt_Pond_Detection_ML_GEOL0069]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
