@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-![title_banner](images/title_banner.png)
+![title_banner](title_banner.png)
 
 <h1 align="center">Melt Pond Detection with Machine Learning</h1>
 
@@ -114,7 +114,7 @@ Incoming reflected radiation is separated into different wavelength bands using 
 
 The spectral diversity of MSI data makes it particularly useful for distinguishing melt ponds from adjacent ice surfaces.
 
-![how_sen2_works](images/sentinel2_diagram.png)
+![how_sen2_works](sentinel2_diagram.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +135,7 @@ K-means is well suited to exploratory remote sensing applications because:
 - spectral structures emerge directly from data
 - it can rapidly process large image datasets
 
-![how_kmeans_works](images/kmeans_diagram.png)
+![how_kmeans_works](kmeans_diagram.png)
 
 ### Key Components of K-Means
 
